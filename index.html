@@ -58,7 +58,7 @@
                         <!-- <img src="..." class="card-img-top" alt="..."> -->
                         <div class="card-body">
                           <h3 class="card-title" >TRADICIONAL</h3>
-                          <p class="card-text">Massa Baunilha com gotas de chocolate.</p>
+                          <p class="card-text">Massa baunilha com gotas de chocolate.</p>
                           <p class="card-text preco"><strong>R$ 10,00 </strong></p>
                           <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 
@@ -165,13 +165,13 @@
                                     <div class="mb-3">
                                       <label for="message-text" class="col-form-label">Massa:</label>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-check="BAUNILHA">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                           BAUNILHA
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-check="CHOCOLATE">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           CHOCOLATE
                                         </label>
@@ -253,13 +253,13 @@
                                     <div class="mb-3">
                                       <label for="message-text" class="col-form-label">Massa:</label>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-check="BAUNILHA">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                           BAUNILHA
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-check="CHOCOLATE">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                           CHOCOLATE
                                         </label>
@@ -282,7 +282,18 @@
 
         <section class="cesta-pedidos text-center" id="cesta">
           <h2 class="secao-titulo cesta-titulo">CESTA DE PEDIDOS</h2>
-          <div class="container-sm cesta "> <p class="text-secondary py-3"> Cesta vazia </p></div>
+          <div class="container-sm cesta" data-textoCopiado="">
+            <p class="text-secondary py-3" data-cestaVazia> Cesta vazia </p>
+            <ul class="lista-cesta" data-listaCesta></ul>
+            <article class="py-2">
+              <strong class="total-preco">
+                <p class="preco-titulo me-2"> Total: </p>
+                <p class="preco-numero" data-precoTotal> R$ 0,00 </p>
+              </strong>
+            </article>
+          </div>
+          <p class="aviso mt-2">Assim que finalizar o pedido basta clicar em finalizar que ele compiará a mensagem automaticamente, depois é só colar no chat do nosso Instagram</p>
+          <button type="button" class="btn finaliza-botao btn-lg mt-2" data-finalizaCompra>Finalizar</button>
         </section>
     </main>
 
@@ -292,5 +303,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="module" src="./dist/js/app.js"></script>
+    <script type="module" src="./dist/js/controllers/finalizaCompra.js"></script>
 </body>
 </html>

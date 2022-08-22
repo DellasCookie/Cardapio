@@ -2,6 +2,7 @@
     --cor-fundo: #842f11;
     --branco: #ffffff;
     --bege: #EFE6D5;
+    --botao-finaliza: #068CD1;
 
     --logo: 'Aboreto', cursive;
     --titulo-secao: 'Lora', serif;
@@ -110,4 +111,30 @@
 }
 .secao-titulo{
     margin-bottom: 2.5rem;
+}
+
+.lista-cesta{
+    padding: 0 !important;
+    list-style: none;
+}
+.lista-item{
+    font-family: var(--preco);
+    font-size: 14px;
+}
+.total-preco{
+    display: flex;
+    justify-content: center;
+    font-family: var(--preco);
+}
+.finaliza-botao{
+    background-color: var(--botao-finaliza);
+    color: white;
+}
+.aviso{
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+}
+.esconde{
+    display: none;
 }
