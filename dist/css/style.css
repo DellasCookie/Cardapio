@@ -1,0 +1,113 @@
+:root{
+    --cor-fundo: #842f11;
+    --branco: #ffffff;
+    --bege: #EFE6D5;
+
+    --logo: 'Aboreto', cursive;
+    --titulo-secao: 'Lora', serif;
+    --titulo-card: 'Gentium Plus', serif;
+    --preco: 'Montserrat', sans-serif;
+}
+.logo{
+    color: var(--bege);
+    font-family: var(--logo);
+    font-weight: 500;
+}
+.corpo{
+    background: var(--cor-fundo);
+}
+.navbar-toggler{
+    color: transparent !important;
+}
+.botao{
+    border: none;
+    background: none;
+}
+.botao-mobile{
+    background-image: url(../image/icons8-menu.svg);
+    width: 30px;
+    height: 30px;
+}
+.titulo{
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    color: var(--branco);
+    font-family: var(--titulo-secao);
+    margin: 0 auto;
+    max-width: 500px;
+}
+.container-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+.tradicionais, .recheados{
+    color: var(--bege);
+    font-family: var(--logo);
+    font-size: 3rem;
+    margin-top: 3.5rem;
+}
+.card{
+    margin: auto;
+}
+.card-style{
+    border: none !important; 
+    width: 18rem
+}
+.card-title{
+    font-family: var(--titulo-card);
+    font-size: 1.5rem;
+}
+.preco{
+    font-family: var(--preco);
+    font-size: 1.25rem;
+}
+.imagem-cartao{
+    object-fit: cover; 
+    height: 350px;
+}
+.cor-botao{
+    background-color: #D15B30;
+    color: white;
+}
+.botao-finaliza{
+    background-color: #068CD1;
+    color: white;
+}
+.modal-title{
+    font-family: var(--titulo-card);
+    font-size: 1.5rem;
+}
+.recipient-name{
+    font-family: var(--preco);
+}
+.cesta-titulo{
+    color: var(--bege);
+    font-family: var(--logo);
+    font-size: 3rem;
+    margin-top: 3.5rem;
+}
+.cesta {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    max-width: 350px;
+}
+.rodape {
+    margin-top: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #521E0B;
+}
+.social{
+    color: var(--bege);
+    font-size: 1.25rem;
+    font-family: var(--titulo-secao);
+}
+.instagram{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.secao-titulo{
+    margin-bottom: 2.5rem;
+}

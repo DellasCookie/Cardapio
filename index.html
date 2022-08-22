@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELLA’S COOKIE | CARDÁPIO</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body class="corpo">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#">DELLA'S COOKIE</a>
+              <button class="navbar-toggler botao" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                  <img src="./dist/image/icons8-menu.svg" alt="Menu">
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#tradicionais">TRADICIONAIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#recheados">RECHEADOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#cesta">CESTA DE PEDIDOS</a>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <article class="container-titulo text-center">
+        <h1 class="text-center mt-5  p-3 titulo">CARDÁPIO COOKIES</h1>
+      </article>
+
+        <section class="tradicionais-section" id="tradicionais">
+
+          <article class="secao-titulo text-center">
+            <h2 class="tradicionais">COOKIE RAIZ</h2>
+          </article>
+
+            <div class="container text-center flex-wrap">
+                <div class="row">
+
+                  <article class="col-12 col-md-6 col-lg-6 mt-4">
+                    <div class="card card-style">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <h3 class="card-title" >TRADICIONAL</h3>
+                          <p class="card-text">Massa Baunilha com gotas de chocolate.</p>
+                          <p class="card-text preco"><strong>R$ 10,00 </strong></p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+                          <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#tradicional" data-bs-whatever="@mdo" data-add>Adicionar a Cesta</button>
+
+                          <fieldset class="modal fade " id="tradicional" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <header class="modal-header">
+                                  <h2 class="modal-title" id="exampleModalLabel" data-titulo="tradicional">TRADICIONAL</h2>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </header>
+                                <main class="modal-body">
+                                  <form data-form="tradicional">
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Quantidade:</label>
+                                      <input type="number" class="form-control" data-quantidade="tradicional">
+                                    </div>
+                                    <input type="submit" class="btn botao-finaliza" value="Confirmar">
+                                  </form>
+                                </main>
+
+                              </div>
+                            </div>
+                          </fieldset>
+
+                        </div>
+                      </div>
+                  </article>
+                  
+                  <article class="col-12 col-md-6 col-lg-6 mt-4">
+                    <div class="card card-style">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <h3 class="card-title">CHOCOLATE</h3>
+                          <p class="card-text">Massa cacau e com gotas de chocolate.</p>
+                          <p class="card-text preco"><strong>R$ 10,00 </strong></p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#chocolate" data-bs-whatever="@mdo">Adicionar a Cesta</button>
+
+                          <fieldset class="modal fade " id="chocolate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <header class="modal-header">
+                                  <h2 class="modal-title" id="exampleModalLabel" data-titulo="chocolate">CHOCOLATE</h2>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </header>
+                                <main class="modal-body">
+                                  <form data-form="chocolate">
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Quantidade:</label>
+                                      <input type="number" class="form-control"  data-quantidade="chocolate">
+                                    </div>
+                                    <input type="submit" class="btn botao-finaliza" value="Confirmar">
+                                  </form>
+                                </main>
+
+                              </div>
+                            </div>
+                          </fieldset>
+
+                        </div>
+                      </div>
+                  </article>  
+                </div>
+              </div>
+        </section>
+
+        <section class="recheados-section mb-4" id="recheados">
+
+          <article class="secao-titulo text-center">
+            <h2 class="recheados">RECHEADOS</h2>
+          </article>
+
+            <div class="container text-center flex-wrap">
+                <div class="row">
+
+                  <article class="cartao col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="card card-style">
+                        <img src="./dist/image/amor-chocolate.jpeg" class="card-img-top imagem-cartao" alt="cookie de chocolate com recheio de doce de leite partido ao meio">
+                        <div class="card-body">
+                          <h3 class="card-title">DOCE AMOR</h3>
+                          <p class="card-text">Massa tradicional baunilha ou chocolate, recheada com doce de leite.</p>
+                          <p class="card-text preco"><strong>R$ 12,00 </strong></p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#doce-amor" data-bs-whatever="@mdo">Adicionar a Cesta</button>
+                          
+                          <fieldset class="modal fade " id="doce-amor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <header class="modal-header">
+                                  <h2 class="modal-title" id="exampleModalLabel" data-titulo="doce-amor">DOCE AMOR</h2>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </header>
+                                <main class="modal-body">
+                                  <form data-form="doce-amor">
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Quantidade:</label>
+                                      <input type="number" class="form-control"  data-quantidade="doce-amor">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Massa:</label>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          BAUNILHA
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          CHOCOLATE
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <input type="submit" class="btn botao-finaliza" value="Confirmar">
+                                  </form>
+                                </main>
+
+                              </div>
+                            </div>
+                          </fieldset>
+
+                        </div>
+                      </div>
+                  </article>
+                  
+                  <article class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="card card-style">
+                        <img src="./dist/image/amor-de-vó.jpeg" class="card-img-top imagem-cartao" alt="cookie de baunilha com recheio de doce de leite partido ao meio">
+                        <div class="card-body">
+                          <h3 class="card-title">AMOR DE VÓ</h3>
+                          <p class="card-text">Massa de baunilha com canela, recheada com doce de leite.</p>
+                          <p class="card-text preco"><strong>R$ 12,00 </strong></p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#amor-de-vo" data-bs-whatever="@mdo">Adicionar a Cesta</button>
+
+                          <fieldset class="modal fade " id="amor-de-vo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <header class="modal-header">
+                                  <h2 class="modal-title" id="exampleModalLabel" data-titulo="amor-de-vo">AMOR DE VÓ</h2>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </header>
+                                <main class="modal-body">
+                                  <form data-form="amor-de-vo">
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Quantidade:</label>
+                                      <input type="number" class="form-control" data-quantidade="amor-de-vo">
+                                    </div>
+                                    <input type="submit" class="btn botao-finaliza" value="Confirmar">
+                                  </form>
+                                </main>
+
+                              </div>
+                            </div>
+                          </fieldset>
+
+                        </div>
+                      </div>
+                  </article>  
+
+                  <article class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div class="card card-style">
+                        <img src="./dist/image/amor-baunilha-nutella.jpeg" class="card-img-top imagem-cartao" alt="cookie de baunilha com recheio de nutella partido ao meio">
+                        <main class="card-body">
+                          <h3 class="card-title">DOSE DE AMOR</h3>
+                          <p class="card-text">Massa tradicional baunilha ou chocolate, recheada de Nutella.</p>
+                          <p class="card-text preco"><strong>R$ 12,00 </strong></p>
+                          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+                          <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#dose-de-amor" data-bs-whatever="@mdo">Adicionar a Cesta</button>
+                          
+                          <fieldset class="modal fade " id="dose-de-amor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                <header class="modal-header">
+                                  <h2 class="modal-title" id="exampleModalLabel"  data-titulo="dose-de-amor">DOSE DE AMOR</h2>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </header>
+                                <main class="modal-body">
+                                  <form data-form="dose-de-amor">
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label" >Quantidade:</label>
+                                      <input type="number" class="form-control" data-quantidade="dose-de-amor">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Massa:</label>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          BAUNILHA
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          CHOCOLATE
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <input type="submit" class="btn botao-finaliza" value="Confirmar">
+                                  </form>
+                                </main>
+
+                              </div>
+                            </div>
+                          </fieldset>
+
+                        </main>
+                      </div>
+                  </article> 
+                </div>
+              </div>
+        </section>
+
+        <section class="cesta-pedidos text-center" id="cesta">
+          <h2 class="secao-titulo cesta-titulo">CESTA DE PEDIDOS</h2>
+          <div class="container-sm cesta "> <p class="text-secondary py-3"> Cesta vazia </p></div>
+        </section>
+    </main>
+
+    <footer class="rodape text-center">
+      <p class="social">Contato:</p>
+      <a class="instagram" href="https://www.instagram.com/dellascookie/"><img src="./dist/image/instagram.png" alt="instagram"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
