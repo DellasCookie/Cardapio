@@ -135,6 +135,6 @@
     font-size: 12px;
     line-height: 14px;
 }
-.esconde{
-    display: none;
+.link{
+    text-decoration: none;
 }

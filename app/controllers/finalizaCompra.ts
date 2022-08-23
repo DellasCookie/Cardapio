@@ -5,6 +5,8 @@ export function finalizaCompra(){
         const textoCopiado = document.querySelector('[data-textoCopiado]') as HTMLElement
         const copia = textoCopiado.textContent as string
         navigator.clipboard.writeText(copia)
+          
+        
     })
     
     console.log(listaDaCesta)

@@ -48,8 +48,7 @@ form.forEach( (element) => {
         console.log(cesta)
         removeTextoCestaVazia()
         somaItensDaCesta(cesta)
-        finalizaCompra()
-  
+        finalizaCompra()  
     })
 })
 
